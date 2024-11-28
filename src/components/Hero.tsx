@@ -21,7 +21,7 @@ export function Hero() {
               Passionate about crafting beautiful web experiences and turning ideas into reality through code ✨
             </p>
             <div className="flex gap-4">
-              <a href="camivinci7@gmail.com" 
+              <a href="mailto:camivinci7@gmail.com" 
                  className="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-medium transition-all hover:shadow-lg hover:-translate-y-0.5">
                 <Mail className="w-5 h-5" />
                 Get in Touch

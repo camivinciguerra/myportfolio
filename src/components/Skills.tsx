@@ -6,28 +6,28 @@ const skillCategories = [
     title: "Frontend Development",
     icon: <Code2 className="w-6 h-6" />,
     skills: [
-      { name: 'HTML', level: 95 },
-      { name: 'CSS', level: 90 },
-      { name: 'JavaScript', level: 92 },
-      { name: 'React', level: 90 },
+      { name: 'HTML' },
+      { name: 'CSS' },
+      { name: 'JavaScript' },
+      { name: 'React' },
     ]
   },
   {
     title: "Backend Development",
     icon: <Database className="w-6 h-6" />,
     skills: [
-      { name: 'C++', level: 85 },
-      { name: 'Java', level: 88 },
-      { name: 'SQL Server', level: 85 },
+      { name: 'C++' },
+      { name: 'Java' },
+      { name: 'SQL Server' },
     ]
   },
   {
     title: "Design & Tools",
     icon: <Palette className="w-6 h-6" />,
     skills: [
-      { name: 'Tailwind CSS', level: 88 },
-      { name: 'Figma', level: 82 },
-      { name: 'Git', level: 87 },
+      { name: 'Tailwind CSS' },
+      { name: 'Figma' },
+      { name: 'Git' },
     ]
   }
 ];
@@ -52,19 +52,10 @@ export function Skills() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">{category.title}</h3>
               </div>
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {category.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-700">{skill.name}</span>
-                      <span className="text-gray-500">{skill.level}%</span>
-                    </div>
-                    <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full transition-all duration-500"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
+                  <div key={skill.name} className="text-gray-700">
+                    {skill.name}
                   </div>
                 ))}
               </div>
